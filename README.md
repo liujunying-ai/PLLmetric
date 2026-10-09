@@ -1,2 +1,2 @@
 # PLLmetric
-This repository provides the implementation and evaluation scripts for the paper “Towards More Thorough Performance Evaluation for Partial Label Learning: An Empirical Study.”
+Please first use demo.m in the data folder to generate ten-fold cross-validation indices for the dataset, and then run the corresponding ReadMe file.
