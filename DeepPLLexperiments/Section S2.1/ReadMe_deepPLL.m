@@ -29,13 +29,11 @@ X_test = X_load(index_test{1},:);
 y_test = y_load_r(index_test{1},:);
 
 % main
-rng(1, 'v5normal');%fix random seed of each loop for reproducibility
 label_recover = build_label_manifold(X_train,y_train,10);%disambiguation
 hiddenLayerSize = size(y_train,2);%the number of labels
 for loop=1:num_loop
     temp_str = ['Loop-', num2str(loop), ' begins (',TimeStr(clock,0),') ...\n'];
     fprintf(all_fid,temp_str);
-    rng(loop);%fix random seed of each loop for reproducibility
     
     %learn with disambiguated labeling information
     net = fitnet(hiddenLayerSize);
