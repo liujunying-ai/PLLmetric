@@ -2,7 +2,7 @@
 calc_acc_train.m and calc_acc_test.m are dedicated to calculating metrics on training and test data, respectively. Specifically, the former computes disACCd and disACCt, while the latter yields teACC and oraACC, based on the input confidences.
 
 # Datasets
-The real-world PLL datasets are downloaded from the <https://palm.seu.edu.cn/zhangml/Resources.htm#partial_data>. Please first use demo.m in the data folder to generate ten-fold cross-validation indices for the dataset and then run the corresponding ReadMe file.
+The real-world PLL datasets are downloaded from the <https://palm.seu.edu.cn/zhangml/Resources.htm#partial_data>. Please first use demo.m in the `data/` folder to generate ten-fold cross-validation indices for each dataset and then run the corresponding ReadMe file. The code of deep PLL experiments is in the `DeepPLLexperiments/` folder, please see the ReadMe files in it.
 
 # Source code
 The source codes of existing PLL methods can be downloaded from the following links respectively.
